@@ -1,5 +1,5 @@
 # streamlit_rtsp
-show rtsp stream in streamlit web via ffmpeg, You can set the hardware acceleration manually set it in the code.
+show rtsp stream in streamlit web via ffmpeg, You can set the hardware acceleration manually in the code.
 
 ## **1. Dependent Environment**
 sudo apt install ffmpeg
