@@ -1,11 +1,12 @@
 # streamlit_rtsp
 show rtsp stream in streamlit web via ffmpeg, You can set the hardware acceleration manually set it in the code.
 
-1. dependent environment:
+## **1. Dependent Environment**
 sudo apt install ffmpeg
 pip3 install streamlit opencv-python
 
-2. change ffmpeg configuration
+## **2. Change ffmpeg Configuration**
+
 
 To change the FFmpeg settings in `st_rtsp_main.py`, modify lines 20-32 as follows:
 
@@ -25,9 +26,8 @@ process = subprocess.Popen(
 )
 ```
 
-
-4. run test:
+## **3. Run Test**
 streamlit run test.py
 
-5. showcase:
+## **4. Showcase**
 ![image](https://github.com/ccl-private/streamlit_rtsp/blob/main/src/converted.gif)
