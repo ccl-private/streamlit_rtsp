@@ -3,6 +3,7 @@ show rtsp stream in streamlit web via ffmpeg, You can set the hardware accelerat
 
 ## **1. Dependent Environment**
 sudo apt install ffmpeg
+
 pip3 install streamlit opencv-python
 
 ## **2. Change ffmpeg Configuration**
