@@ -11,6 +11,8 @@ pip3 install streamlit opencv-python
 
 To change the FFmpeg settings in `st_rtsp_main.py`, modify lines 20-30 as follows:
 
+If you do not have the relevant hardware or install the relevant drivers, do not modify it.
+
 ```python
 process = subprocess.Popen(
     [
