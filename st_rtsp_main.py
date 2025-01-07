@@ -20,8 +20,6 @@ class VideoHandler(BaseHTTPRequestHandler):
             process = subprocess.Popen(
                 [
                     'ffmpeg',
-                    '-hwaccel', 'vaapi',
-                    '-vaapi_device', '/dev/dri/renderD128',
                     '-i', self.stream.rtsp_url,
                     '-f', 'rawvideo',
                     '-pix_fmt', 'bgr24',
@@ -30,6 +28,20 @@ class VideoHandler(BaseHTTPRequestHandler):
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE
             )
+
+            # process = subprocess.Popen(
+            #     [
+            #         'ffmpeg',
+            #         '-hwaccel', 'vaapi',
+            #         '-vaapi_device', '/dev/dri/renderD128',
+            #         '-i', self.stream.rtsp_url,
+            #         '-f', 'rawvideo',
+            #         '-pix_fmt', 'bgr24',
+            #         '-'
+            #     ],
+            #     stdout=subprocess.PIPE,
+            #     stderr=subprocess.PIPE
+            # )
 
             width, height = self.stream.resolution
             try:
