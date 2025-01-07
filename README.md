@@ -6,7 +6,7 @@ sudo apt install ffmpeg
 pip3 install streamlit opencv-python
 
 2. run test:
-python3 test.py
+streamlit run test.py
 
 3. showcase:
 ![image](https://github.com/ccl-private/streamlit_rtsp/blob/main/src/converted.gif)
